@@ -1,0 +1,33 @@
+def fibonacci(n):
+    if n <= 1:
+        return n
+    
+    a = 0
+    b = 1
+    
+    for i in range(n - 1):
+        temp = a + b
+        a = b
+        b = temp
+    
+    return b
+
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
+
+
+result = fibonacci(10)
+print("Fibonacci(10) =", result)
+
+fact = factorial(5)
+print("5! =", fact)
+
+numbers = [1, 2, 3, 4, 5]
+for num in numbers:
+    print(num * num)
+
+message = "Hello, World!"
+print(message)
